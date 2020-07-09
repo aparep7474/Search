@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Images</title>
+    <style>
+      input[type=text]:focus {
+        box-shadow: 0 0 8px rgba(33,33,33,.2);
+        outline: 0;
+      }
+      input[type=text]:hover {
+        box-shadow: 0 0 8px rgba(33,33,33,.2);
+      }
+      button:hover {
+        box-shadow: 0 0 8px rgba(33,33,33,.2);
+      }
+      .input-icons {
+        width: 100%;
+      }
+      .icon {
+        padding: 12px;
+        min-width: 40px;
+        color: grey;
+        position: absolute;
+      }
+      .icon2 {
+        color: blue;
+      }
+      .input-field {
+        width: 100%;
+        padding-left: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand">Bootleg Google</a>
+      <div class="navbar-collapse collapse" id="navbarNavDropdown">
+        <div class="navbar-nav ml-auto">
+          <span class="nav-item"><a class="nav-link" href="index.html" style="color: black; font-size: 13px;">Search</a></span>
+        </div>
+      </div>
+    </nav>
+    <div class="text-center">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Google_Images_2015_logo.svg/1200px-Google_Images_2015_logo.svg.png" alt="Google Logo" style="padding-top: 100px;width: 270px;">
+    </div>
+    <form action="http://images.google.com/images" style="padding-top: 20px;">
+      <div class="text-center input-icons form-group">
+        <i class="fa fa-search icon"></i>
+        <input type="text" name="q" class="input-field" style="border-top-left-radius: 25px; border-bottom-left-radius: 25px; width: 500px; height: 44px; border: 1px solid #ccc; transition: box-shadow .3s; border-right: white;">
+        <button type="submit" class="text-center" style="position: relative; top: -1px; margin-left: -6px; border-top-right-radius: 25px; border-bottom-right-radius: 25px; background-color: white; transition-duration: .3s; height: 44px; width: 35px; border: 1px solid #ccc; transition: box-shadow .3s; border-left: white;"><i class="fa fa-search icon2"></i></button>
+      </div>
+    </form>
+  </body>
+</html>

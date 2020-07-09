@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <title>Advanced</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand">Bootleg <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo" style="width: 75px; margin-top: 2px"></a>
+      <div class="navbar-collapse collapse" id="navbarNavDropdown">
+        <div class="navbar-nav ml-auto">
+          <span class="nav-item"><a class="nav-link" href="index.html" style="color: black; font-size: 13px;">Search</a></span>
+        </div>
+      </div>
+    </nav>
+    <h5 style="margin-left: 10px; color: #BF2C2C; font-weight: normal; padding-left: 25px; padding-top: 25px; padding-bottom: 10px;">Advanced Search</h5>
+    <hr style="width:100%;">
+    <p style="padding-top: 25px; padding-left: 25px; padding-bottom: 15px;">Find pages with...</p>
+    <form onsubmit="myFunction()" action="https://google.com/search">
+      <div class="row">
+        <label class="col-2" style="padding-left: 40px; padding-bottom: 15px; font-size: 13px"> all these words:</label>
+        <input type="text" name="q" style="width: 600px; height: 25px; font-size: 13px">
+      </div>
+      <div class="row">
+        <label class="col-2" style="padding-left: 40px; padding-bottom: 15px; font-size: 13px"> this exact word or phrase:</label>
+        <input id="1" type="text" name="q" style="width: 600px; height: 25px; font-size: 13px">
+      </div>
+      <div class="row">
+        <label class="col-2" style="padding-left: 40px; padding-bottom: 15px; font-size: 13px"> any of these words:</label>
+        <input id="2" type="text" name="q" style="width: 600px; height: 25px; font-size: 13px">
+      </div>
+      <div class="row">
+        <label class="col-2" style="padding-left: 40px; padding-bottom: 15px; font-size: 13px"> none of these words:</label>
+        <input id="3" type="text" name="q" style="width: 600px; height: 25px; font-size: 13px">
+      </div>
+      <div style="padding-left: 655px">
+        <button type="submit" style="border-radius: 3px; border: 1px solid blue; background-color: blue; width: 150px; color: white;">Advanced Search<button>
+      </div>
+    </form>
+  </body>
+  <script>
+  function myFunction(){
+    var str1 = document.getElementById("1").value;
+    var str2 = document.getElementById("2").value;
+    var str3 = document.getElementById("3").value;
+    if (str1 == '') {
+      console.log("empty")
+    } else {
+      document.getElementById("1").value = '"' + str1 + '"'
+    }
+    document.getElementById("2").value = str2.split(' ').join(' OR ');
+    if (str3 == '') {
+      console.log("empty")
+    } else {
+      var sr3 = str3.split(' ').join(' -');
+      document.getElementById("3").value = "-" + sr3
+    }
+  };
+  </script>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Search</title>
+    <style>
+      input[type=text]:focus {
+        box-shadow: 0 0 8px rgba(33,33,33,.2);
+        outline: 0;
+      }
+      input[type=text]:hover {
+        box-shadow: 0 0 8px rgba(33,33,33,.2);
+      }
+      button:hover {
+        box-shadow: 0 0 4px rgba(10,10,10,.2);
+      }
+      .input-icons i {
+        position: absolute;
+      }
+      .input-icons {
+        width: 100%;
+      }
+      .icon {
+        padding: 12px;
+        min-width: 40px;
+        color: grey;
+      }
+      .input-field {
+        width: 100%;
+        padding-left: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand">Bootleg Google</a>
+      <div class="navbar-collapse collapse" id="navbarNavDropdown">
+        <div class="navbar-nav ml-auto">
+          <span class="nav-item"><a class="nav-link" href="images.html" style="color: black; font-size: 13px;">Images</a></span>
+          <span class="nav-item"><a class="nav-link" href="advanced.html" style="color: black; font-size: 13px;">Advanced</a></span>
+        </div>
+      </div>
+    </nav>
+    <div class="text-center">
+      <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo" style="padding-top: 100px;">
+    </div>
+    <form action="https://google.com/search" style="padding-top: 30px;">
+      <div class="text-center input-icons">
+        <i class="fa fa-search icon"></i>
+        <input type="text" name="q" class="input-field" style="border-radius: 25px; width: 575px; height: 44px; border: 1px solid #ccc; transition: box-shadow .3s;">
+      </div>
+      <div class="text-center" style="padding-top: 29px;">
+        <span style="padding-right: 5px;">
+          <button type="submit" class="text-center" style="width: 127px; height: 36px; border-radius: 3px; color: grey; background-color: #eeeff0; font-size: 13px; border: 1px solid #eeeff0; transition-duration: .3s;">Google Search</button>
+        </span>
+        <span style="padding-left: 5px;">
+          <button name="btnI" type="submit" class="text-center" style="width: 127px; height: 36px; border-radius: 3px; color: grey; background-color: #eeeff0; font-size: 13px; border: 1px solid #eeeff0; transition-duration: .3s;">I'm Feeling Lucky</button>
+        </span>
+      </div>
+    </form>
+  </body>
+</html>
